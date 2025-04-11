@@ -19,6 +19,7 @@ public class LoginPage{
 	public void login(String username, String password) {
 		driver.findElement(usernameField).sendKeys(username);
 		driver.findElement(passwordField).sendKeys(password);
+		ScreenshotUtil.takeScreenshot(driver, "Login Screen");
 		driver.findElement(loginButton).click();
 	}
 	

@@ -16,6 +16,7 @@ public void setup() {
 	driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://practicetestautomation.com/practice-test-login/");
+	ScreenshotUtil.takeScreenshot(driver, "Launching website");
 }
 
 @AfterMethod

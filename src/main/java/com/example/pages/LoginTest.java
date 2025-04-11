@@ -2,7 +2,6 @@ package com.example.pages;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.example.pages.LoginPage;
 
 
 public class LoginTest extends BaseTest{
@@ -15,5 +14,6 @@ public class LoginTest extends BaseTest{
 		 
 		 boolean isSuccess = loginPage.isLoginSuccessful();
 		 Assert.assertTrue(isSuccess, "Login is successfulss");
+		 ScreenshotUtil.takeScreenshot(driver, "Successful login!");
 	 }
 }
